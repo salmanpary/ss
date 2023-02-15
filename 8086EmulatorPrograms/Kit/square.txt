@@ -1,0 +1,9 @@
+MVI H 20 – initialize register H with 20
+MVI L 50 – initialize register L with 50
+MVI A 00 – initialize accumulator A with 00
+MOV B, M – moves the content of memory location which is indirectly specified by M in register B
+ADD M – add the content of memory location which is indirectly specified by M in accumulator A
+DCR B – decrement value of register B by 1
+JNZ 2007 – jump to memory location 2007 if ZF = 0, i.e register B does not contain 0
+STA 3050 – stores value of A in 3050
+HLT – stops executing the program and halts any further execution

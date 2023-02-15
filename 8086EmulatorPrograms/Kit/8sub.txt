@@ -1,0 +1,10 @@
+2000	MVI	C, 00	[C] <- 00
+2002	LHLD	2500	[H-L] <- [2500]
+2005	MOV	A, H	[A] <- [H]
+2006	SUB	L	[A] <- [A] – [L]
+2007	JNC	200B	Jump If no borrow
+200A	INR	C	[C] <- [C] + 1
+200B	STA	2502	[A] -> [2502], Result
+200E	MOV	A, C	[A] <- [C]
+2010	STA	2503	[A] -> [2503], Borrow
+2013	HLT		Stop

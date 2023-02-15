@@ -1,0 +1,11 @@
+LDA 2050: loads the content of memory location 2050 in accumulator A
+MOV B, A: moves the value of accumulator A in register B
+ANI 0F: performs AND operation in value of accumulator A and 0F
+MOV C, A: moves the value of accumulator A in register C
+MOV A, B: moves the value of register B in accumulator A
+RLC: instruction rotates the value of accumulator A, left by 1 bit. Since it is performed 4 times therefore this will reverse the number i.e swaps the lower order nibble with a higher-order nibble
+Repeat step 3
+ADD C: Add the content of the register of C in accumulator A
+STA 3050: Stores value of A in 3050
+HLT: Stops executing the program and halts any further execution
+ADDITIONAL INSTRUCTION: This task can be done in a 2nd way by using 

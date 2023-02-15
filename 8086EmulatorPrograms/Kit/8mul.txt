@@ -1,0 +1,21 @@
+LXI H, 2050 will load the HL pair register with the address 2050 of memory location.
+
+2. MOV B, M  copies the content of memory into register B.
+
+3. INX H will increment the address of HL pair by one and make it 2051H.
+
+4. MOV C,M copies the content of memory into register C.
+
+5. MVI A,00H assign 00 to A.
+
+6. top: ADD B add the content of accumulator with register B and store the result in accumulator.
+
+7. DCR C decrement the register C.
+
+8. JNZ TOP jumps on top till C doesn’t becomes 0.
+
+9. INX H  will increment the address of HL pair by one and make it 2052H.
+
+10. MOV M,A copies the content of  A which is our answer to register M.
+
+11. HLT stops executing the program and halts any further execution.

@@ -1,0 +1,10 @@
+LDA 2050 moves the contents of 2050 memory location to the accumulator.
+MOV H, A copies contents of Accumulator to register H to A
+LDA 2051 moves the contents of 2051 memory location to the accumulator.
+ADD H adds contents of A (Accumulator) and H register (F9). The result is stored in A itself. For all arithmetic instructions A is by default an operand and A stores the result as well
+MOV L, A copies contents of A (34) to L
+MVI A 00 moves immediate data (i.e., 00) to A
+ADC A adds contents of A(00), contents of register specified (i.e A) and carry (1). As ADC is also an arithmetic operation, A is by default an operand and A stores the result as well
+MOV H, A copies contents of A (01) to H
+SHLD 3050 moves the contents of L register (34) in 3050 memory location and contents of H register (01) in 3051 memory location
+HLT stops executing the program and halts any further execution
